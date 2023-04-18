@@ -10,7 +10,6 @@ const getFilms = async (req, res) => {
   }
 };
 
-// Definir la ruta para obtener una película por su ID
 const getFilmById = async (req, res) => {
   try {
     const film = await Film.findById(req.params.id);
