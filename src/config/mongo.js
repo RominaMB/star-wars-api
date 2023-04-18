@@ -19,7 +19,7 @@ const dbConnect = () => {
       }
     })
     .catch((error) => {
-      console.error(`Database connection error: ${error.message}`);
+      console.error(`DB connection error: ${error.message}`);
       process.exit(1);
     });
 };
