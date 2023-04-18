@@ -1,11 +1,14 @@
-const { Film } = require("../models/Film");
+const Film = require("../models/Film");
 const axios = require("axios");
 
+console.log;
 const getFilms = async (req, res) => {
   try {
     const films = await Film.find({});
+    console.log(films);
     res.send(films || { error: "Film not found" });
   } catch (error) {
+    console.log(error);
     res.status(500).send(error);
   }
 };
@@ -18,8 +21,12 @@ const getFilmById = async (req, res) => {
     }
     res.json(film);
   } catch (error) {
-    res.status(500).send(error);
+    res
+      .status(500)
+      .send({ message: "Error while retrieving films", error: error.message });
   }
 };
+
+
 
 module.exports = { getFilms, getFilmById };

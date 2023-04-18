@@ -9,7 +9,7 @@ const planetSchema = new mongoose.Schema(
     climate: { type: String },
     gravity: { type: String },
     terrain: { type: String },
-    surface_water: { type: Number },
+    surface_water: { type: String },
     population: { type: Number },
   },
   { timestamp: false, versionKey: false }
