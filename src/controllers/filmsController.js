@@ -23,7 +23,7 @@ const getFilmById = async (req, res) => {
   } catch (error) {
     res
       .status(500)
-      .send({ message: "Error while retrieving films", error: error.message });
+      .send({ message: "Error while retrieving film", error: error.message });
   }
 };
 
