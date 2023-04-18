@@ -54,7 +54,7 @@ const createFilm = async (req, res) => {
     const createdFilm = await newFilm.save();
     return res
       .status(201)
-      .send(`Film successfully created. Film id: ${createdFilm._id}`);
+      .send(`Film successfully created. ID: ${createdFilm._id}`);
   } catch (error) {
     console.error(error);
     return res.status(500).json({
