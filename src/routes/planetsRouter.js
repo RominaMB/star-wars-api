@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const {
   getPlanets,
-  getPlanetsById,
+  getPlanetById,
   createPlanet,
   updatePlanetById,
   deletePlanetById,
@@ -10,7 +10,7 @@ const {
 const planetsRouter = Router();
 
 planetsRouter.get("/", getPlanets);
-planetsRouter.get("/:id", getPlanetsById);
+planetsRouter.get("/:id", getPlanetById);
 planetsRouter.post("/", createPlanet);
 planetsRouter.put("/:id", updatePlanetById);
 planetsRouter.delete("/:id", deletePlanetById);

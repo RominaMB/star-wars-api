@@ -13,7 +13,7 @@ const getPlanets = async (req, res) => {
   }
 };
 
-const getPlanetsById = async (req, res) => {
+const getPlanetById = async (req, res) => {
   try {
     const planet = await Planet.findById(req.params.id);
     if (!planet) {
@@ -119,7 +119,7 @@ const deletePlanetById = async (req, res) => {
 
 module.exports = {
   getPlanets,
-  getPlanetsById,
+  getPlanetById,
   createPlanet,
   updatePlanetById,
   deletePlanetById,
