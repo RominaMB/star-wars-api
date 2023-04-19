@@ -26,34 +26,34 @@ npm run start
 
 GET /films: Devuelve todos los registros existentes.
 
-GET /films/:id: Al recibir una id, busca en la base de datos el film con la id correspondiente y lo devuelve.
+GET /films/{id}: Al recibir una id, busca en la base de datos el film con la id correspondiente y lo devuelve.
 
 POST /films: Crea un film en la base de datos.
 
-PUT /films/:id: Al recibir una id, busca en la base de datos el film con la id correspondiente, lo actualiza y devuelve el nuevo film actualizado.
+PUT /films/{id}: Al recibir una id, busca en la base de datos el film con la id correspondiente, lo actualiza y devuelve el nuevo film actualizado.
 
-DELETE /films/:id: Al recibir una id, busca en la base de datos el film con la id correspondiente, lo elimina y devuelve un mensaje de éxito.
+DELETE /films/{id}: Al recibir una id, busca en la base de datos el film con la id correspondiente, lo elimina y devuelve un mensaje de éxito.
 
 ### - Planets
 
 GET /planets: Devuelve todos los registros existentes.
 
-GET /planets/:id: Al recibir una id, busca en la base de datos el planeta con la id correspondiente y lo devuelve.
+GET /planets/{id}: Al recibir una id, busca en la base de datos el planeta con la id correspondiente y lo devuelve.
 
 POST /planets: Crea un planeta en la base de datos.
 
-PUT /planets/:id: Al recibir una id, busca en la base de datos el planeta con la id correspondiente, lo actualiza y devuelve el nuevo planeta actualizado.
+PUT /planets/{id}: Al recibir una id, busca en la base de datos el planeta con la id correspondiente, lo actualiza y devuelve el nuevo planeta actualizado.
 
-DELETE /planets/:id: Al recibir una id, busca en la base de datos el planeta con la id correspondiente, lo elimina y devuelve un mensaje de éxito.
+DELETE /planets/{id}: Al recibir una id, busca en la base de datos el planeta con la id correspondiente, lo elimina y devuelve un mensaje de éxito.
 
 ### - Starships
 
 GET /starships: Devuelve todos los registros existentes.
 
-GET /starships/:id: Al recibir una id, busca en la base de datos la starship con la id correspondiente y la devuelve.
+GET /starships/{id}: Al recibir una id, busca en la base de datos la starship con la id correspondiente y la devuelve.
 
 POST /starships: Crea una starship en la base de datos.
 
-PUT /starships/:id: Al recibir una id, busca en la base de datos la starship con la id correspondiente, lo actualiza y devuelve la nueva starship actualizada.
+PUT /starships/{id}: Al recibir una id, busca en la base de datos la starship con la id correspondiente, lo actualiza y devuelve la nueva starship actualizada.
 
-DELETE /starships/:id: Al recibir una id, busca en la base de datos la starship con la id correspondiente, lo elimina y devuelve un mensaje de éxito.
+DELETE /starships/{id}; Al recibir una id, busca en la base de datos la starship con la id correspondiente, lo elimina y devuelve un mensaje de éxito.
