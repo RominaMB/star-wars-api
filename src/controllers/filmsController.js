@@ -1,7 +1,7 @@
 const Film = require("../models/Film");
 const mongoose = require("mongoose");
 
-console.log;
+// Devuelve todos los registros de films existentes.
 const getFilms = async (req, res) => {
   try {
     const films = await Film.find({});
@@ -13,6 +13,7 @@ const getFilms = async (req, res) => {
   }
 };
 
+// Al recibir una id, busca en la base de datos el film con la id correspondiente y lo devuelve.
 const getFilmById = async (req, res) => {
   try {
     const film = await Film.findById(req.params.id);
@@ -27,6 +28,7 @@ const getFilmById = async (req, res) => {
   }
 };
 
+// Crea un film en la base de datos.
 const createFilm = async (req, res) => {
   const { title, episode_id, director, opening_crawl, producer, release_date } =
     req.body;
@@ -37,7 +39,7 @@ const createFilm = async (req, res) => {
 
   if (episode_id >= 1 && episode_id <= 6) {
     return res.status(400).json({
-      message: "Episode_id must be greater than 6",
+      message: "Episode_id must be greater than 6", // Debe ser mayor a 6 (películas principales).
     });
   }
 
@@ -64,6 +66,7 @@ const createFilm = async (req, res) => {
   }
 };
 
+// Al recibir una id, busca en la base de datos el film con la id correspondiente, lo actualiza y devuelve el film actualizado.
 const updateFilmById = async (req, res) => {
   const { id } = req.params;
 
@@ -85,6 +88,7 @@ const updateFilmById = async (req, res) => {
   }
 };
 
+// Al recibir una id, busca en la base de datos el film con la id correspondiente, lo elimina y devuelve un mensaje de éxito.
 const deleteFilmById = async (req, res) => {
   const { id } = req.params;
 

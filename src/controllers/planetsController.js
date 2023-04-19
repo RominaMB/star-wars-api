@@ -1,7 +1,7 @@
 const Planet = require("../models/Planet");
 const mongoose = require("mongoose");
 
-console.log;
+// Devuelve todos los registros de planetas existentes.
 const getPlanets = async (req, res) => {
   try {
     const planets = await Planet.find({});
@@ -13,6 +13,7 @@ const getPlanets = async (req, res) => {
   }
 };
 
+// Al recibir una id, busca en la base de datos el planeta con la id correspondiente y lo devuelve.
 const getPlanetById = async (req, res) => {
   try {
     const planet = await Planet.findById(req.params.id);
@@ -27,6 +28,7 @@ const getPlanetById = async (req, res) => {
   }
 };
 
+// Crea un planeta en la base de datos.
 const createPlanet = async (req, res) => {
   const {
     name,
@@ -77,6 +79,7 @@ const createPlanet = async (req, res) => {
   }
 };
 
+// Al recibir una id, busca en la base de datos el planeta con la id correspondiente, lo actualiza y devuelve el planeta actualizado.
 const updatePlanetById = async (req, res) => {
   const { id } = req.params;
 
@@ -98,6 +101,7 @@ const updatePlanetById = async (req, res) => {
   }
 };
 
+// Al recibir una id, busca en la base de datos el planeta con la id correspondiente, lo elimina y devuelve un mensaje de éxito.
 const deletePlanetById = async (req, res) => {
   const { id } = req.params;
 

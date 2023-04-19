@@ -37,7 +37,7 @@ starshipsRouter.get("/", getStarships);
  *         required: true
  *         schema:
  *           type: string
- *         example: 643f2a2067b56d0e6ef3ffc3
+ *         example: 644031ea89b6cd7a2e5d8b91
  *     responses:
  *       200:
  *         description: OK
@@ -112,7 +112,7 @@ starshipsRouter.post("/", createStarship);
  *         required: true
  *         schema:
  *           type: string
- *         example: 643f2a2067b56d0e6ef3ffc3
+ *         example: 644031ea89b6cd7a2e5d8b91
  *     requestBody:
  *       required: true
  *       content:
@@ -173,7 +173,7 @@ starshipsRouter.put("/:id", updateStarshipById);
  *         required: true
  *         schema:
  *           type: string
- *         example: 643f2a2067b56d0e6ef3ffc3
+ *         example: 644031ea89b6cd7a2e5d8b91
  *     responses:
  *       200:
  *         Links: No links

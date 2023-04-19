@@ -37,7 +37,7 @@ planetsRouter.get("/", getPlanets);
  *         description: ID of the planet.
  *         schema:
  *           type: string
- *         example: 643f2a1f67b56d0e6ef3ffad
+ *         example: 644031e889b6cd7a2e5d8b83
  *     responses:
  *       200:
  *         description: OK
@@ -104,7 +104,7 @@ planetsRouter.post("/", createPlanet);
  *         required: true
  *         schema:
  *           type: string
- *         example: 643f2a1f67b56d0e6ef3ffad
+ *         example: 644031e889b6cd7a2e5d8b83
  *     requestBody:
  *       required: true
  *       content:
@@ -157,7 +157,7 @@ planetsRouter.put("/:id", updatePlanetById);
  *         required: true
  *         schema:
  *           type: string
- *         example: 643f2a1f67b56d0e6ef3ffad
+ *         example: 644031e889b6cd7a2e5d8b83
  *     responses:
  *       200:
  *         Links: No links

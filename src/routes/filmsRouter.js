@@ -37,7 +37,7 @@ filmsRouter.get("/", getFilms);
  *         required: true
  *         schema:
  *           type: string
- *         example: 643f2a1d67b56d0e6ef3ffa1
+ *         example: 644031e789b6cd7a2e5d8b6e
  *     responses:
  *       200:
  *         description: OK
@@ -98,7 +98,7 @@ filmsRouter.post("/", createFilm);
  *         required: true
  *         schema:
  *           type: string
- *         example: 643f2a1d67b56d0e6ef3ffa1
+ *         example: 644031e789b6cd7a2e5d8b6e
  *     requestBody:
  *       required: true
  *       content:
@@ -145,7 +145,7 @@ filmsRouter.put("/:id", updateFilmById);
  *         required: true
  *         schema:
  *           type: string
- *         example: 643f2a1d67b56d0e6ef3ffa1
+ *         example: 644031e789b6cd7a2e5d8b6e
  *     responses:
  *       200:
  *         Links: No links

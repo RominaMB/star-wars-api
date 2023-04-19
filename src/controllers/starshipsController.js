@@ -1,7 +1,7 @@
 const Starship = require("../models/Starship");
 const mongoose = require("mongoose");
 
-console.log;
+// Devuelve todos los registros de starships existentes.
 const getStarships = async (req, res) => {
   try {
     const starships = await Starship.find({});
@@ -13,6 +13,7 @@ const getStarships = async (req, res) => {
   }
 };
 
+// Al recibir una id, busca en la base de datos la starship con la id correspondiente y la devuelve.
 const getStarshipById = async (req, res) => {
   try {
     const starship = await Starship.findById(req.params.id);
@@ -21,15 +22,14 @@ const getStarshipById = async (req, res) => {
     }
     res.json(starship);
   } catch (error) {
-    res
-      .status(500)
-      .send({
-        message: "Error while retrieving starship",
-        error: error.message,
-      });
+    res.status(500).send({
+      message: "Error while retrieving starship",
+      error: error.message,
+    });
   }
 };
 
+// Crea una starship en la base de datos.
 const createStarship = async (req, res) => {
   const {
     name,
@@ -88,6 +88,7 @@ const createStarship = async (req, res) => {
   }
 };
 
+// Al recibir una id, busca en la base de datos la starship con la id correspondiente, lo actualiza y devuelve la starship actualizado.
 const updateStarshipById = async (req, res) => {
   const { id } = req.params;
 
@@ -109,6 +110,7 @@ const updateStarshipById = async (req, res) => {
   }
 };
 
+// Al recibir una id, busca en la base de datos la starship con la id correspondiente, la elimina y devuelve un mensaje de éxito.
 const deleteStarshipById = async (req, res) => {
   const { id } = req.params;
 
