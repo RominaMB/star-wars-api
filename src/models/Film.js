@@ -7,7 +7,7 @@ const filmSchema = new mongoose.Schema(
     opening_crawl: { type: String },
     director: { type: String, required: true },
     producer: { type: String },
-    release_date: { type: Date },
+    release_date: { type: String },
   },
   { timestamp: false, versionKey: false }
 );
