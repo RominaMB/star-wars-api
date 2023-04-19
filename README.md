@@ -56,4 +56,4 @@ POST /starships: Crea una starship en la base de datos.
 
 PUT /starships/{id}: Al recibir una id, busca en la base de datos la starship con la id correspondiente, lo actualiza y devuelve la nueva starship actualizada.
 
-DELETE /starships/{id}; Al recibir una id, busca en la base de datos la starship con la id correspondiente, lo elimina y devuelve un mensaje de éxito.
+DELETE /starships/{id}: Al recibir una id, busca en la base de datos la starship con la id correspondiente, lo elimina y devuelve un mensaje de éxito.
