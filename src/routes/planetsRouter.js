@@ -34,6 +34,7 @@ planetsRouter.get("/", getPlanets);
  *       - in: path
  *         name: id
  *         required: true
+ *         description: ID of the planet.
  *         schema:
  *           type: string
  *         example: 643f2a1f67b56d0e6ef3ffad

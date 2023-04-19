@@ -33,6 +33,7 @@ filmsRouter.get("/", getFilms);
  *     parameters:
  *       - in: path
  *         name: id
+ *         description: ID of the film.
  *         required: true
  *         schema:
  *           type: string
